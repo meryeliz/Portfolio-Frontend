@@ -1,0 +1,21 @@
+{
+    "name": "Mariana Cruz",
+    "backImage": "https://i.pinimg.com/originals/6c/b9/05/6cb905e809af52bc288c3f3e413cfa95.jpg",
+    "imgPerfil": "https://avatars.githubusercontent.com/u/88063521?v=4",
+    "position": "Full Stack Developer Jr",
+    "ubicacion": "Santiago del Estero (Argentina)",
+    "about": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, architecto. Sequi quod nesciunt eos pariatur distinctio tempora, temporibus fugit officiis unde neque aut, labore fuga reiciendis aliquam minus autem consequatur.",
+    "estudios": [{
+        "school" : "Escuela de Comercio N°1 'Rep. Arg.'",
+        "title" : "Perito Mercantil con Especializacion Contable E Impositiva",
+        "start" : "2004",
+        "end" : "2008"
+    },
+    {
+        "school" : "Facultad de Ciencias Exactas y Tecnologias UNSE",
+        "title" : "Programacion Universitario en Informatia",
+        "start" : "2021",
+        "end" : "2023"
+    }
+    ]   
+}

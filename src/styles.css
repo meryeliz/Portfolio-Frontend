@@ -1,0 +1,115 @@
+
+/*estilo para encabezado*/
+.bordesPort {
+    border-radius: 0 0 45px 45px;
+    border: solid 1px rgb(201, 203, 204);
+    margin: 15px;
+    margin-top: 0px;
+    padding-bottom: 25px;
+}
+.bordesPortada {
+    border-radius: 45px 45px 0 0;
+    border: solid 1px rgb(201, 203, 204);
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+}
+
+
+.margenesEnc {
+    padding-top: 5px;
+    padding-left: 15px;
+}
+
+.margenesRS {
+    padding-top: 5px;
+    padding-right: 10px;
+}
+.nombre {
+    margin: 5px;
+    margin-left: -10px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    font-size: 25px;
+    color: grey;
+
+}
+.btn-style {
+    color: rgb(156, 154, 154);
+    font-size: 35px;
+}
+.btn-size {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/*Estilo para imagenes*/
+.bordeImg {
+    border-radius: 45px 45px 0 0;
+    border: solid 1px rgb(201, 203, 204);
+    width: 100%;
+}
+
+.imgPerfil {
+    width: 170px;
+    border-radius: 100px;
+    position: relative;
+    top: -90px;
+    left: 15px;
+}
+
+/*end img*/
+/*Estilo Portada*/
+.margenesT {
+    padding-top: 80px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    text-align: left;
+}
+
+.botSection1 {
+    padding-left: 15px;
+}
+
+.edit1 {
+    position: relative;
+    right: -160px;
+    bottom: -30px;
+}
+
+/*enlace en portada*/
+.enlaceNone {
+    text-decoration: none;
+}
+
+/*---End---*/
+/*about*/
+.about {
+    border-radius: 45px 45px 45px 45px;
+    border: solid 1px rgb(201, 203, 204);
+    margin: 15px;
+    padding: 20px;
+}
+
+/*---End---*/
+/*educ*/
+.education{
+    border-radius: 45px 45px 45px 45px;
+    border: solid 1px rgb(201, 203, 204);
+    margin: 15px;
+    padding: 20px;
+}
+
+/*project*/
+.proj {
+    border-radius: 45px 45px 45px 45px;
+    border: solid 1px rgb(201, 203, 204);
+    margin: 15px;
+    padding: 20px;
+}
+/*estilo seccion educacion*/
+div.education {
+    list-style: none;
+}
