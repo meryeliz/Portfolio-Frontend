@@ -6,12 +6,14 @@
     "ubicacion": "Santiago del Estero (Argentina)",
     "about": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, architecto. Sequi quod nesciunt eos pariatur distinctio tempora, temporibus fugit officiis unde neque aut, labore fuga reiciendis aliquam minus autem consequatur.",
     "estudios": [{
+        "imgSchool" : "http://access.imglarger.com:8889/results/CaUc01m4_4x.jpg",
         "school" : "Escuela de Comercio N°1 'Rep. Arg.'",
         "title" : "Perito Mercantil con Especializacion Contable E Impositiva",
         "start" : "2004",
         "end" : "2008"
     },
     {
+        "imgSchool" : "http://access.imglarger.com:8889/results/CaUc01m4_4x.jpg",
         "school" : "Facultad de Ciencias Exactas y Tecnologias UNSE",
         "title" : "Programacion Universitario en Informatia",
         "start" : "2021",

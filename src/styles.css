@@ -102,6 +102,12 @@
     padding: 20px;
 }
 
+.imgSchool {
+    width: 150px;
+    height: 150px;
+    
+}
+
 /*project*/
 .proj {
     border-radius: 45px 45px 45px 45px;
