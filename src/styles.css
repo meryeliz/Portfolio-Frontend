@@ -94,6 +94,15 @@
 }
 
 /*---End---*/
+
+/*estilo exoeriencia*/
+.expe {
+    border-radius: 45px 45px 45px 45px;
+    border: solid 1px rgb(201, 203, 204);
+    margin: 15px;
+    padding: 20px;
+}
+
 /*educ*/
 .education{
     border-radius: 45px 45px 45px 45px;
