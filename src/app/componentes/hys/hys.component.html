@@ -13,12 +13,25 @@
                     </button>
                 </div>
                 <!-- fin de boton -->
+                <!-- botones de edicion -->
+                <div class="col-12 d-grid gap-2 d-md-flex justify-content-md-end">
+                    <!-- boton edit 3 -->
+                    <button class="btn">
+                        <i class="fa-solid fa-pen"></i>    
+                    </button>
+                    <!-- boton de eliminar -->
+                    <button class="btn">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </button>
+                </div>
+                    
             </div>
         </div>
-        
+        <!-- tabla -->
         <div class="row">
-            
-            <div class="text-center col-sm-4 col-md-4 col-lg-4">
+                <!-- columna html -->
+            <div class="text-center col-sm-4 col-md-4 col-lg-4">              
+                <!-- start circle -->
                 <circle-progress
                 [percent]="57"
                 [radius]="100"
@@ -36,10 +49,13 @@
                 [innerStrokeColor]="'#c9c9c9'"
                 [animation]="true"
                 [animationDuration]="300"
-                
             ></circle-progress>
+            <!-- end circle -->
             </div>
+            <!-- end html -->
+            <!-- columana css -->
             <div class="text-center col-sm-4 col-md-4 col-lg-4">
+                <!-- start circle -->
                 <circle-progress
                 [percent]="50"
                 [radius]="100"
@@ -59,7 +75,10 @@
                 [animationDuration]="300"
                 [lazy]="true"
             ></circle-progress>
+            <!-- end circle -->
             </div>
+            <!-- end css -->
+            <!-- columna js -->
             <div class="text-center col-sm-4 col-md-4 col-lg-4">
                 <circle-progress
                 [percent]="40"
@@ -81,6 +100,8 @@
                 [lazy]="true"
             ></circle-progress>
             </div>
+            <!-- end js -->
+            <!-- columana java -->
             <div class="text-center col-sm-4 col-md-4 col-lg-4">
                 <circle-progress
                 [percent]="20"
@@ -102,6 +123,8 @@
                 [lazy]="true"
             ></circle-progress>
             </div>
+            <!-- end java -->
+            <!-- columana trabajo en equipo -->
             <div class="text-center col-sm-4 col-md-4 col-lg-4">
                 <circle-progress
                 [percent]="80"
@@ -123,6 +146,8 @@
                 [lazy]="true"
             ></circle-progress>
             </div>
+            <!-- end equipo -->
+            <!-- columna english -->
             <div class="text-center col-sm-4 col-md-4 col-lg-4">
                 <circle-progress
                 [percent]="40"
@@ -144,6 +169,8 @@
                 [lazy]="true"
             ></circle-progress>
             </div>
+            <!-- eng english -->
+            <!-- columna github -->
             <div class="text-center col-sm-4 col-md-4 col-lg-4">
                 <circle-progress
                 [percent]="40"
@@ -165,7 +192,8 @@
                 [lazy]="true"
             ></circle-progress>
             </div>
-
-        </div>    
-    </div>
+            <!-- end github -->
+        </div>
+        <!-- fin tabla -->
+    </div>    
 </section>
