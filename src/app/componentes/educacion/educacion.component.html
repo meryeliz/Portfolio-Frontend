@@ -1,12 +1,36 @@
 <!-- Educacion -->
-<section >
-    <div class="education">
-        <h3>Educacion</h3>
+<section class="education">
+    <div class="position-relative">
+        <h3>Educación</h3>
+        <!-- boton de agregacion -->
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="btn btn-plus">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+        </div>       
+        <!-- fin de boton -->
+        <!-- lista de educacion -->
         <ul class="list-group ">
+            <!-- Inicio del bucle ngFor -->
             <li *ngFor="let educacion of educacionLista.estudios" class="list-group-item">
+                <!-- botones de edicion -->
                 <div class="card mb-3 " style="max-width: 100%;">
-                    <!--<div class="row g-0 d-flex bd-highlight mb-3">-->
-                    <div class="row">  
+                    <div class="position-absolute top-0 end-0">
+                        <!-- boton edit 3 -->
+                        <button class="btn">
+                            <i class="fa-solid fa-pen"></i>    
+                        </button>
+                        <!-- boton de eliminar -->
+                        <button class="btn">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </button>
+                    </div>
+                    <!-- fin de botones -->
+
+                    <!-- Tabla -->
+                    <!-- filas -->
+                    <div class="row">
+                        <!-- columnas -->
                         <div class="col-xl-4 col-sm-4 p-3 bd-highlight">
                             <!-- imagen para educacion -->
                             <img [src]="'../assets/img/birrete.png'" class="mx-auto d-block imgSchool" alt="birrete">
@@ -18,31 +42,18 @@
                                 <p class="card-text"><small class="text-muted"><time>{{educacion.start}}</time> - <time>{{educacion.end}}</time></small></p>
                             </div>
                         </div>
-                    </div>                    
+                        <!-- fin de columnas -->
+                    </div>
+                    <!-- fin de filas -->
                 </div>
+                <!-- fin de tabla -->
             </li>
-            
+            <!-- Fin del ngFor -->
         </ul>
-        
+        <!-- Fin de lista -->
+
     </div>
     
-
 </section>
 
 
-<!-- <li>
-                <div class="card mb-3" style="max-width: 100%;">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="..." class="img-fluid rounded-start" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Facultad de Ciencias Exactas y Tecnologias UNSE</h5>
-                                <p class="card-text">Programador Universitario en Informatica</p>
-                                <p class="card-text"><small class="text-muted"><time>2021</time> - <time>2023</time></small></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li> -->
