@@ -1,5 +1,56 @@
 <!-- Experiencias -->
 <section class="expe">
-    <h3>Experiencia</h3>
+    <div class="position-relative">
+        <h3>Experiencia</h3>
+        <!-- boton de agregacion -->
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="btn btn-plus">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+        </div>       
+        <!-- fin de boton -->
+        <!-- lista de experiencia -->
+        <ul class="list-group ">
+            <li *ngFor="let e of experienciaLista.experiencias" class="list-group-item">
+                <!-- botones de edicion -->
+                <div class="position-absolute top-0 end-0">
+                    <!-- boton edit 3 -->
+                    <button class="btn">
+                        <i class="fa-solid fa-pen"></i>    
+                    </button>
+                    <!-- boton de eliminar -->
+                    <button class="btn">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </button>
+                </div>
+                <!-- fin de botones -->
+
+                <!-- Tabla -->
+                <!-- filas -->
+                <div class="row">
+                    <!-- columnas -->
+                    <div class="col-xl-4 col-sm-4 p-3 bd-highlight">
+                            
+                        <img [src]="" class="mx-auto d-block imgSchool" alt="">
+                    </div> 
+                    <div class="col-xl-8 col-sm-8 p-2 bd-highlight">
+                        <div class="card-body">
+                            <h5 class="card-title">{{e.cargo}}</h5>
+                            
+                            <p class="card-text"><small class="text-muted"><time>{{e.start}}</time> - <time>{{e.end}}</time></small></p>
+                            <p class="card-text"><small class="text-muted"><time>{{e.duracion}}</time> </small></p>
+                            <p class="card-text text-muted">{{e.ubicacion}}</p>
+                        </div>
+                    </div>
+                    <!-- fin columnas -->
+                </div>
+                <!-- fin filas -->
+                <!-- fin tabla -->
+            </li>
+        </ul>
+
+    </div>
+    
+
     
 </section>
