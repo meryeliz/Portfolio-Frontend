@@ -132,4 +132,17 @@ div.education {
     margin: 15px;
     padding: 20px;
 }
-
+.contenedor {
+    margin: 10px;
+    padding: 20px;
+}
+.parte1,.parte2 {
+    display: inline-block;
+    text-align: justify;
+}
+/* estilo para difuminacion de la imagen flotante*/
+.img-proyecto {
+    box-shadow: 10px 10px 30px #000000;
+    box-shadow: ejeX ejeY difumasion color;
+}
+/*fin project*/

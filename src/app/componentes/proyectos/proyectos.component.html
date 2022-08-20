@@ -19,48 +19,77 @@
         </div>   
     </div>
     
-    <!-- lista de proyectos -->
+    <!-- lista de proyectos  -->
         <ul class="list-group ">
-            <!-- Inicio del bucle ngFor -->
-            <li *ngFor="let pro of proyectoLista.proyectos" class="list-group-item">
+            <!-- Inicio 1 -->
+            <li class="list-group-item">
                 <!-- botones de edicion -->
-                
-                    <div class="position-absolute top-0 end-0">
-                        <!-- boton edit 3 -->
-                        <button class="btn">
-                            <i class="fa-solid fa-pen"></i>    
-                        </button>
-                        <!-- boton de eliminar -->
-                        <button class="btn">
-                            <i class="fa-solid fa-trash-can"></i>
-                        </button>
-                    </div>
-                    <!-- fin de botones -->
+                <div class="position-absolute top-0 end-0">
+                    <!-- boton edit 3 -->
+                    <button class="btn">
+                        <i class="fa-solid fa-pen"></i>    
+                    </button>
+                    <!-- boton de eliminar -->
+                    <button class="btn">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </button>
+                </div>
+                <!-- fin de botones -->
 
-                    <!-- Tabla -->
-                    <!-- filas -->
-                    <div class="row">
-                        <!-- columnas -->
-                        <div class="container">
-
-                            <div class="col-sm-12 col-md-7 col-lg-7 parte1">
-
-                                <h5 class="card-title">{{pro.titulo}}</h5>
-                                <p class="card-text">{{pro.descripcion}}</p>
-
-                            </div>
-                            <div class="col-sm-12 col-md-3 col-lg-3 offset-md-1 offset-lg-1 parte2">
-                                <!-- imagen para proyecto -->
-                                <img [src]="pro.imgPro" class="img-fluid img-proyecto" alt="">
-                            </div>
+                <!-- Tabla -->
+                <!-- filas -->
+                <div class="row">
+                    <!-- columnas -->
+                    <div class="contenedor">
+                        <div class="col-sm-12 col-md-7 col-lg-7 parte1">
+                            <h4 class="card-title">{{miProyecto.titulo1}}</h4>
+                            <p class="card-text">{{miProyecto.descripcion1}}</p>
                         </div>
-                        <!-- fin de columnas -->
+                        <div class="col-sm-12 col-md-3 col-lg-3 offset-md-1 offset-lg-1 parte2">
+                            <!-- imagen para proyecto -->
+                            <img [src]="'../assets/img/calcu.jpg'" class="img-fluid img-proyecto" alt="">
+                        </div>
                     </div>
-                    <!-- fin de filas -->
-                
+                    <!-- fin de columnas -->
+                </div>
+                <!-- fin de filas -->
                 <!-- fin de tabla -->
             </li>
-            <!-- Fin del ngFor -->
+            <!-- Fin lista -->
+            <!-- inicio 2 -->
+            <li class="list-group-item">
+                <!-- botones de edicion -->
+                <div class="position-absolute top-0 end-0">
+                    <!-- boton edit 3 -->
+                    <button class="btn">
+                        <i class="fa-solid fa-pen"></i>    
+                    </button>
+                    <!-- boton de eliminar -->
+                    <button class="btn">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </button>
+                </div>
+                <!-- fin de botones -->
+                <!-- Tabla -->
+                <!-- filas -->
+                <div class="row">
+                    <!-- columnas -->
+                    <div class="contenedor">
+                        <div class="col-sm-12 col-md-7 col-lg-7 parte1">
+                            <h4 class="card-title">{{miProyecto.titulo2}}</h4>
+                            <p class="card-text">{{miProyecto.descripcion2}}</p>
+                        </div>
+                        <div class="col-sm-12 col-md-3 col-lg-3 offset-md-1 offset-lg-1 parte2">
+                            <!-- imagen para proyecto -->
+                            <img [src]="'../assets/img/portfolio.png'" class="img-fluid img-proyecto" alt="">
+                        </div>
+                    </div>
+                    <!-- fin de columnas -->
+                </div>
+                <!-- fin de filas -->
+                <!-- fin de tabla -->
+            </li>
+            <!-- Fin  -->
         </ul>
         <!-- Fin de lista -->
     

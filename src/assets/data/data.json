@@ -35,16 +35,9 @@
         "end" : "2023"
     }
     ],
+    "titulo1" : "Calculadora",
+    "descripcion1" : "Proyecto realizado en JavaScript usando DOM, para el tutorial Introducción a la Programación con JavaScript.",
+    "titulo2" : "Mi Portfolio",
+    "descripcion2" : "Portfolio realizado para el curso de capacitación de Argentina Programa."
 
-    "proyectos" : [{
-        "titulo" : "Calculadora",
-        "descripcion" : "Proyecto realizado en JavaScript usando DOM, para el tutorial Introducción a la Programación con JavaScript",
-        "imgPro" : "https://www.istockphoto.com/es/vector/icono-aislado-calculadora-kawaii-gm843914480-138089999"
-    },
-    {
-        "titulo" : "Mi Portfolio",
-        "descripcion" : "Portfolio realizado para el curso de capacitación de Argentina Programa",
-        "imgPro" : ""
-    }
-    ]
 }
