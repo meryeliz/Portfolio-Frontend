@@ -13,11 +13,55 @@
                         <i class="fa-solid fa-plus"></i>
                     </button>
                 </div>
-                <!-- fin de boton -->
-                
+                <!-- fin de boton -->                
             </div>
+            <!-- fin tabla -->
         </div>   
     </div>
     
+    <!-- lista de proyectos -->
+        <ul class="list-group ">
+            <!-- Inicio del bucle ngFor -->
+            <li *ngFor="let pro of proyectoLista.proyectos" class="list-group-item">
+                <!-- botones de edicion -->
+                
+                    <div class="position-absolute top-0 end-0">
+                        <!-- boton edit 3 -->
+                        <button class="btn">
+                            <i class="fa-solid fa-pen"></i>    
+                        </button>
+                        <!-- boton de eliminar -->
+                        <button class="btn">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </button>
+                    </div>
+                    <!-- fin de botones -->
+
+                    <!-- Tabla -->
+                    <!-- filas -->
+                    <div class="row">
+                        <!-- columnas -->
+                        <div class="container">
+
+                            <div class="col-sm-12 col-md-7 col-lg-7 parte1">
+
+                                <h5 class="card-title">{{pro.titulo}}</h5>
+                                <p class="card-text">{{pro.descripcion}}</p>
+
+                            </div>
+                            <div class="col-sm-12 col-md-3 col-lg-3 offset-md-1 offset-lg-1 parte2">
+                                <!-- imagen para proyecto -->
+                                <img [src]="pro.imgPro" class="img-fluid img-proyecto" alt="">
+                            </div>
+                        </div>
+                        <!-- fin de columnas -->
+                    </div>
+                    <!-- fin de filas -->
+                
+                <!-- fin de tabla -->
+            </li>
+            <!-- Fin del ngFor -->
+        </ul>
+        <!-- Fin de lista -->
     
 </section>
