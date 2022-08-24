@@ -15,6 +15,7 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HysComponent } from './componentes/hys/hys.component';
 import { HomeComponent } from './componentes/home/home.component';
 import { ExperienciaComponent } from './componentes/experiencia/experiencia.component';
+import { FooterComponent } from './componentes/footer/footer.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { ExperienciaComponent } from './componentes/experiencia/experiencia.comp
     LoginComponent,
     HysComponent,
     HomeComponent,
-    ExperienciaComponent
+    ExperienciaComponent,
+    FooterComponent
     
   ],
   imports: [
