@@ -8,9 +8,14 @@
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background: linear-gradient(to right, #15257c, #3d72d3, #4591b4);
 }
-
+/* Imagen para la segunda columna*/
 .imgF {
     background-image: url(../../../assets/img/poly.png);
+    background-repeat: no-repeat;
+    /*para que no quede espacios libres usamos los ejes x - y*/
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
 }
 
 @media (min-width: 768px) {
@@ -31,8 +36,7 @@
 }
 
 
-
-/* CSS */
+/* CSS boton*/
 .button-71 {
     background-color: #0078d0;
     border: 0;
