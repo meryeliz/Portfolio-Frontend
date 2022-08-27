@@ -24,6 +24,7 @@
     "estudios": [{
         "school" : "Escuela de Comercio N°1 'Rep. Arg.'",
         "title" : "Perito Mercantil con Especializacion Contable E Impositiva",
+        "ciudad" : "La Quiaca, Jujuy",
         "start" : "2004",
         "end" : "2008"
     },
@@ -31,6 +32,7 @@
         
         "school" : "Facultad de Ciencias Exactas y Tecnologias UNSE",
         "title" : "Programacion Universitario en Informatia",
+        "ciudad" : "Santiago del Estero",
         "start" : "2021",
         "end" : "2023"
     }
