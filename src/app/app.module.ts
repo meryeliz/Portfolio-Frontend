@@ -16,6 +16,7 @@ import { HysComponent } from './componentes/hys/hys.component';
 import { HomeComponent } from './componentes/home/home.component';
 import { ExperienciaComponent } from './componentes/experiencia/experiencia.component';
 import { FooterComponent } from './componentes/footer/footer.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { FooterComponent } from './componentes/footer/footer.component';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule, //cargamos el modulo
-    NgCircleProgressModule.forRoot({})
+    NgCircleProgressModule.forRoot({}),
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
