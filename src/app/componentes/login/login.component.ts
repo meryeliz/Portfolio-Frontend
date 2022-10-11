@@ -26,6 +26,9 @@ export class LoginComponent implements OnInit {
     )
   }
 
+  /** para obtener el email y password en el html
+   * 
+   */
   ngOnInit(): void {
   }
   get Email() {
