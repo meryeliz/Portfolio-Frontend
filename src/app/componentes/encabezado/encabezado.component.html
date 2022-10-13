@@ -43,9 +43,12 @@
                         </li>
                         <!-- enlace de login -->
                         <li class="nav-item">
+                            <!--  
                             <a href="/login" class="btn  btn-size nav-link enlaceNone menu__item" target="_blank" >
                                 Login
-                            </a>
+                            </a>-->
+                            <button type="button" class="btn  btn-size nav-link enlaceNone menu__item" (click)="login()" *ngIf="!isLogged" >Login</button>
+                            <button type="button" class="btn  btn-size nav-link enlaceNone menu__item" (click)="onLogOut()" *ngIf="isLogged">CERRAR SESION</button>
                         </li>
                     </ul>
                 </div>

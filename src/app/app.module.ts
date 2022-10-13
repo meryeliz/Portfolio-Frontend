@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
 import { EncabezadoComponent } from './componentes/encabezado/encabezado.component';
 import { PortadaComponent } from './componentes/portada/portada.component';
@@ -16,7 +15,8 @@ import { HysComponent } from './componentes/hys/hys.component';
 import { HomeComponent } from './componentes/home/home.component';
 import { ExperienciaComponent } from './componentes/experiencia/experiencia.component';
 import { FooterComponent } from './componentes/footer/footer.component';
-import { ReactiveFormsModule } from '@angular/forms';
+//import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -39,7 +39,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     HttpClientModule,
     AppRoutingModule, //cargamos el modulo
     NgCircleProgressModule.forRoot({}),
-    ReactiveFormsModule
+   // ReactiveFormsModule
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
