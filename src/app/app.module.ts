@@ -15,7 +15,7 @@ import { HysComponent } from './componentes/hys/hys.component';
 import { HomeComponent } from './componentes/home/home.component';
 import { ExperienciaComponent } from './componentes/experiencia/experiencia.component';
 import { FooterComponent } from './componentes/footer/footer.component';
-//import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 
 
@@ -39,7 +39,7 @@ import { FormsModule } from '@angular/forms';
     HttpClientModule,
     AppRoutingModule, //cargamos el modulo
     NgCircleProgressModule.forRoot({}),
-   // ReactiveFormsModule
+    ReactiveFormsModule,
     FormsModule
   ],
   providers: [],
