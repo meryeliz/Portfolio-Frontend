@@ -17,6 +17,8 @@ import { ExperienciaComponent } from './componentes/experiencia/experiencia.comp
 import { FooterComponent } from './componentes/footer/footer.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
+import { interceptorProvider } from './servicios/interceptor.service';
+
 
 
 @NgModule({
@@ -42,7 +44,7 @@ import { FormsModule } from '@angular/forms';
     ReactiveFormsModule,
     FormsModule
   ],
-  providers: [],
+  providers: [interceptorProvider],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
