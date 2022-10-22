@@ -43,11 +43,11 @@
                         </li>
                         <!-- enlace de login -->
                         <li class="nav-item">
-                            <a  class="btn btn-style nav-link enlaceNone menu__item" (click)="login()" *ngIf="!isLogged" >
+                            <a  class="btn btn-style nav-link enlaceNone menu__item fs-3" (click)="login()" *ngIf="!isLogged" ><i class="fa-solid fa-right-to-bracket"></i>
                                 Login
                             </a>
                             
-                            <a class="btn btn-style nav-link enlaceNone menu__item" (click)="onLogOut()" *ngIf="isLogged">
+                            <a class="btn btn-style nav-link enlaceNone menu__item fs-4" (click)="onLogOut()" *ngIf="isLogged"><i class="fa-solid fa-door-open"></i>
                                 Cerrar sesión
                             </a>
                         </li>

@@ -44,10 +44,10 @@ export class LoginComponent implements OnInit {
     }, err => {
       this.isLogged = false;
       this.isLoginFail = true;
-      this.errorMsj = err.error.mensaje;
-      console.log(this.errorMsj);      
+      this.errorMsj = err.error.message;
+      //console.log(err.error.message);      
     })
-    //console.log("mostrar nombre "+this.nombreUsuario);
+    
   }
   
 }
