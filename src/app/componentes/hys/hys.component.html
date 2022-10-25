@@ -9,179 +9,29 @@
                 </div>
                 <!-- boton de agregacion -->
                 <div class="col-4 d-grid gap-2 d-md-flex justify-content-md-end"> 
-                    <button class="btn btn-plus">
+                    <!-- nuevaskill es la ruta-->
+                    <button routerLink="/nuevaskill" class="btn btn-plus" *ngIf="isLogged">
                         <i class="fa-solid fa-plus"></i>
                     </button>
                 </div>
-                <!-- fin de boton -->
-                <!-- botones de edicion -->
-                <div class="col-12 d-grid gap-2 d-md-flex justify-content-md-end">
-                    <!-- boton edit 3 -->
-                    <button class="btn">
-                        <i class="fa-solid fa-pen"></i>    
-                    </button>
-                    <!-- boton de eliminar -->
-                    <button class="btn">
-                        <i class="fa-solid fa-trash-can"></i>
-                    </button>
-                </div>
-                    
+                <!-- fin de boton -->                    
             </div>
         </div>
         <!-- tabla -->
         <div class="row">
-                <!-- columna html -->
-            <div class="text-center col-sm-4 col-md-4 col-lg-4">              
+                <!-- columna -->
+            <div class="text-center col-sm-4 col-md-4 col-lg-4" *ngFor="let skill of skill">              
                 <!-- start circle -->
                 <circle-progress
-                [percent]="57"
+                [percent]="(skill.porcentaje)"
                 [radius]="100"
                 [imageSrc]="'../assets/img/html.png'"
-                [showImage]="true"
+                [showImage]="false"
                 [imageHeight]="100"
                 [imageWidth]="100"
                 [showUnits]="false"
-                [title]="'HTML'"
-                [titleFontSize]="'2em'"
-                [showSubtitle]="false"
-                [outerStrokeWidth]="10"
-                [innerStrokeWidth]="3"
-                [outerStrokeColor]="'#E67300'"
-                [innerStrokeColor]="'#c9c9c9'"
-                [animation]="true"
-                [animationDuration]="300"
-            ></circle-progress>
-            <!-- end circle -->
-            </div>
-            <!-- end html -->
-            <!-- columana css -->
-            <div class="text-center col-sm-4 col-md-4 col-lg-4">
-                <!-- start circle -->
-                <circle-progress
-                [percent]="50"
-                [radius]="100"
-                [imageSrc]="'../assets/img/css.png'"
-                [showImage]="true"
-                [imageHeight]="100"
-                [imageWidth]="100"
-                [showUnits]="false"
-                [title]="'CSS'"
-                [titleFontSize]="'2em'"
-                [showSubtitle]="false"
-                [outerStrokeWidth]="10"
-                [innerStrokeWidth]="3"
-                [outerStrokeColor]="'#0066CC'"
-                [innerStrokeColor]="'#c9c9c9'"
-                [animation]="true"
-                [animationDuration]="300"
-                [lazy]="true"
-            ></circle-progress>
-            <!-- end circle -->
-            </div>
-            <!-- end css -->
-            <!-- columna js -->
-            <div class="text-center col-sm-4 col-md-4 col-lg-4">
-                <circle-progress
-                [percent]="40"
-                [radius]="100"
-                [imageSrc]="'../assets/img/js.png'"
-                [showImage]="true"
-                [imageHeight]="80"
-                [imageWidth]="80"
-                [showUnits]="false"
-                [title]="'JS'"
-                [titleFontSize]="'2em'"
-                [showSubtitle]="false"
-                [outerStrokeWidth]="10"
-                [innerStrokeWidth]="3"
-                [outerStrokeColor]="'#FFD919'"
-                [innerStrokeColor]="'#c9c9c9'"
-                [animation]="true"
-                [animationDuration]="300"
-                [lazy]="true"
-            ></circle-progress>
-            </div>
-            <!-- end js -->
-            <!-- columana java -->
-            <div class="text-center col-sm-4 col-md-4 col-lg-4">
-                <circle-progress
-                [percent]="40"
-                [radius]="100"
-                [imageSrc]="'../assets/img/java.png'"
-                [showImage]="true"
-                [imageHeight]="100"
-                [imageWidth]="60"
-                [showUnits]="false"
-                [title]="'JAVA'"
-                [titleFontSize]="'2em'"
-                [showSubtitle]="false"
-                [outerStrokeWidth]="10"
-                [innerStrokeWidth]="3"
-                [outerStrokeColor]="'#72A0C1'"
-                [innerStrokeColor]="'#c9c9c9'"
-                [animation]="true"
-                [animationDuration]="300"
-                [lazy]="true"
-            ></circle-progress>
-            </div>
-            <!-- end java -->
-            <!-- columana trabajo en equipo -->
-            <div class="text-center col-sm-4 col-md-4 col-lg-4">
-                <circle-progress
-                [percent]="80"
-                [radius]="100"
-                [imageSrc]="'../assets/img/grupal.png'"
-                [showImage]="true"
-                [imageHeight]="80"
-                [imageWidth]="80"
-                [showUnits]="false"
-                [title]="'JAVA'"
-                [titleFontSize]="'2em'"
-                [showSubtitle]="false"
-                [outerStrokeWidth]="10"
-                [innerStrokeWidth]="3"
-                [outerStrokeColor]="'#967BB6'"
-                [innerStrokeColor]="'#c9c9c9'"
-                [animation]="true"
-                [animationDuration]="300"
-                [lazy]="true"
-            ></circle-progress>
-            </div>
-            <!-- end equipo -->
-            <!-- columna english -->
-            <div class="text-center col-sm-4 col-md-4 col-lg-4">
-                <circle-progress
-                [percent]="40"
-                [radius]="100"
-                [imageSrc]="'../assets/img/eng.png'"
-                [showImage]="true"
-                [imageHeight]="80"
-                [imageWidth]="80"
-                [showUnits]="false"
-                [title]="'JAVA'"
-                [titleFontSize]="'2em'"
-                [showSubtitle]="false"
-                [outerStrokeWidth]="10"
-                [innerStrokeWidth]="3"
-                [outerStrokeColor]="'#CB4154'"
-                [innerStrokeColor]="'#c9c9c9'"
-                [animation]="true"
-                [animationDuration]="300"
-                [lazy]="true"
-            ></circle-progress>
-            </div>
-            <!-- eng english -->
-            <!-- columna github -->
-            <div class="text-center col-sm-4 col-md-4 col-lg-4">
-                <circle-progress
-                [percent]="40"
-                [radius]="100"
-                [imageSrc]="'../assets/img/github.png'"
-                [showImage]="true"
-                [imageHeight]="80"
-                [imageWidth]="80"
-                [showUnits]="false"
-                [title]="'GITHUB'"
+                [title]="(skill.nombre)"
+                [showTitle]="true"
                 [titleFontSize]="'2em'"
                 [showSubtitle]="false"
                 [outerStrokeWidth]="10"
@@ -190,11 +40,27 @@
                 [innerStrokeColor]="'#c9c9c9'"
                 [animation]="true"
                 [animationDuration]="300"
-                [lazy]="true"
             ></circle-progress>
+            <!-- end circle -->
+            <!-- botones de edicion -->
+                <div class="col-12 d-grid gap-2 d-md-flex justify-content-md-end">
+                    
+                    <td *ngIf="isLogged">
+                    <!-- boton edit 3 -->
+                        <button class="btn" routerLink="/edithys/{{skill.id}}">
+                            <i class="fa-solid fa-pen"></i>    
+                        </button>
+                    </td>
+                    <td *ngIf="isLogged">
+                        <!-- boton de eliminar -->
+                        <button class="btn" (click)="delete(skill.id)">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </button>
+                    </td>     
+                </div>                    
             </div>
-            <!-- end github -->
         </div>
         <!-- fin tabla -->
+        
     </div>    
 </section>

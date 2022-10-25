@@ -4,6 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 //Importamos nuestros comonenetes
 import { LoginComponent } from '../componentes/login/login.component';
 import { HomeComponent } from '../componentes/home/home.component';
+import { NewSkillComponent } from '../componentes/hys/new-skill.component';
+import { EditSkillComponent } from '../componentes/hys/edit-skill.component';
 
 
 
@@ -11,6 +13,8 @@ import { HomeComponent } from '../componentes/home/home.component';
 const routes: Routes = [
   { path: '', component: HomeComponent }, //la ruta dirige a la pagina principal
   { path: 'login', component: LoginComponent },
+  { path: 'nuevaskill', component: NewSkillComponent },
+  { path: 'edithys/:id', component: EditSkillComponent}
   
 
 ];

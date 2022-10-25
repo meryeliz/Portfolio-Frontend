@@ -18,6 +18,8 @@ import { FooterComponent } from './componentes/footer/footer.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import { interceptorProvider } from './servicios/interceptor.service';
+import { EditSkillComponent } from './componentes/hys/edit-skill.component';
+import { NewSkillComponent } from './componentes/hys/new-skill.component';
 
 
 
@@ -33,7 +35,9 @@ import { interceptorProvider } from './servicios/interceptor.service';
     HysComponent,
     HomeComponent,
     ExperienciaComponent,
-    FooterComponent
+    FooterComponent,
+    EditSkillComponent,
+    NewSkillComponent
     
   ],
   imports: [
