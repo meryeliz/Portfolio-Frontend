@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nomEscuela">Ingrese nombre de Institución</label>
+                    <input type="text" class="form-control" id="nomEscuela" name="nomEscuela" [(ngModel)]="nomEscuela" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcion">Agregue un descripción</label>
+                    <input type="text" class="form-control"  id="descripcion" name="descripcion" [(ngModel)]="descripcion" required>
+                </div>
+                <div class="form-group">
+                    <label for="ciudad">Agregar ubicación</label>
+                    <input type="text" class="form-control"  id="ciudad" name="ciudad" [(ngModel)]="ciudad" required>
+                </div>
+                <div class="form-group">
+                    <label for="fechaInicio"> Fecha de inicio: 
+                        <input type="date" class="form-control" id="fechaInicio" name="fechaInicio" min="1990-01-01" max="2022-12-01" [(ngModel)]="fechaInicio" required/>
+                    </label>
+                    <label for="fechaFin"> Fecha de fin: 
+                        <input type="date" class="form-control" id="fechaFin" name="fechaFin" min="1990-01-01" max="2030-12-30" [(ngModel)]="fechaFin" required/>
+                    </label>
+                </div>
+
+                <button class="btn btn-primary">
+                    Agregar Estudios
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
