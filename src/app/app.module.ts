@@ -20,6 +20,8 @@ import { FormsModule } from '@angular/forms';
 import { interceptorProvider } from './servicios/interceptor.service';
 import { EditSkillComponent } from './componentes/hys/edit-skill.component';
 import { NewSkillComponent } from './componentes/hys/new-skill.component';
+import { EditEducacionComponent } from './componentes/educacion/edit-educacion.component';
+import { NewEducacionComponent } from './componentes/educacion/new-educacion.component';
 
 
 
@@ -37,7 +39,9 @@ import { NewSkillComponent } from './componentes/hys/new-skill.component';
     ExperienciaComponent,
     FooterComponent,
     EditSkillComponent,
-    NewSkillComponent
+    NewSkillComponent,
+    EditEducacionComponent,
+    NewEducacionComponent
     
   ],
   imports: [
